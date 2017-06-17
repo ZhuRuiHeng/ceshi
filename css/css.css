@@ -1,0 +1,137 @@
+.bg{
+	background: url(../images/bg.png);
+}
+.bg p{
+	 line-height: 210px; text-align: center;
+}
+form{
+	background: url(../images/search-bg.png) no-repeat; position: relative; top: 11px;
+}
+form input[type=text],form input[type=submit]{
+	height: 25px; background: none;
+	border: none;
+}
+form input[type=submit]{
+	position: relative;z-index: 2; width: 60px;
+}
+form #search{
+	position: absolute;right: 20px; color: #ccc; font-size: 16px; z-index: 0; top: 5px;
+}
+form input:focus{
+	outline: none;
+}
+form input[type=text]{
+	color: #ccc;
+	text-indent: 1em;
+}
+.search{
+	height: 64px;
+	border:7px solid #000; border-image-source:url(../images/line_bg.png); 
+	border-image-width:8px 255px 8px 255px;
+	border-image-repeat:repeat;
+	padding: 0px;
+	margin: 0px;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: inherit;
+}
+.nav a{
+	color: #fff;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: inherit;
+}
+.nav li{
+	position: relative; padding-left: 10px;
+}
+.nav li span{
+	position: absolute;
+	top: 15px;
+	left: 0px;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #111;
+	border-radius: 50%;
+	background-color:#111 ;
+	opacity: 0.4;
+}
+.nav li:hover span,.nav li.active span{
+	opacity: 1;
+}
+
+*{
+	margin: 0;padding: 0;
+}
+.right{
+	background-image: url(../images/right_bg.png);	
+}
+.right .right_container{
+	background-image: url(../images/right_container_bg.png);	padding:1px 40px; overflow: hidden; transition: all .5s linear;
+}
+.right .title{
+	background-image: url(../images/right_bg.png);	 padding-bottom: 16px;border-bottom-left-radius: 8px;border-bottom-right-radius: 8px;padding-top: -1px; border-top:22px solid #222 ; 
+}
+.right .title>div{
+	background-image: url(../images/bg.png); border-bottom-left-radius: 8px;border-bottom-right-radius: 8px; ;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+     margin:0px
+}
+.title h1{
+	border-top:1px dashed #fff ; color: #fff; line-height: 54px;padding-left: 22px
+}
+.title p{
+	height: 30px;padding-left: 22px; color: #999;
+}
+.title p a{
+	 color: #fff;
+}
+.content{
+	padding: 20px 0;
+}
+.navbar-nav > li > a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.navbar-default{
+	border-width: 4px;
+	border-radius: 10px;
+	border-color:#ccc
+}
+.img_list>div{
+	margin-bottom: 26px;
+	height: 330px;
+	overflow: -hidden;
+}
+.img_list>div>div{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	padding: 33px 28px;
+/*	transition: all .3s linear;*/
+/*	transform: translateY(-100%) rotateY(90deg) rotateZ(0deg)*/
+}
+.img_list>div:hover>div{
+/*	transform: translateY(-100%) rotateY(0deg) rotateZ(10deg)*/
+}
+.img_list img{
+	width: 100%;
+	border: 6px solid #fff;
+}
+.carousel{
+	padding: 50px 0;
+}
+
+.right .right_container.ng-enter{
+	transform: scale(2,2);
+}
+.right .right_container.ng-enter-active{
+	transform: scale(1,1);
+}
+.right .right_container.ng-leave{
+	transform: scale(1,1);
+}
+.right .right_container.ng-leave-active{
+	transform: scale(2,2);
+}

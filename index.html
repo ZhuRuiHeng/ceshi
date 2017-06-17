@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>博客</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+	<body ng-controller="myCtrl">
+		<div class="container">
+			<div class="col-md-3 bg">
+				<p><img src="images/left_font.png"/></p>
+				<div class="search">
+					<form action="#" method="post">
+						<input type="text" name="" id="" value=""  placeholder="请输入您要检索的文字"/>
+						<input type="submit" value="   "/>
+						<span class="glyphicon glyphicon-search" aria-hidden="true" id="search"></span>
+					</form>	
+				</div>
+				<ul class="nav nav-pills nav-stacked">
+				  <li role="presentation" class="active"><a href="#/home">HOME</a><span></span></li>
+				  <li role="presentation" ng-repeat="x in data"><a href="#/{{x|lowercase}}" ng-bind="x| uppercase "></a><span></span></li>
+				  
+				  <!--<li role="presentation"><a href="#">SKINS</a><span></span></li>
+				  <li role="presentation"><a href="#">GALLERY</a><span></span></li>
+				  <li role="presentation"><a href="#">FEATURES</a><span></span></li>-->
+				</ul>
+			</div>
+			<div class="col-md-9 right">
+				<div class="right_container" ng-view>
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		<script src="js/angular.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular-animate.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular-route.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../bs/js/jquery-1.12.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../bs/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
